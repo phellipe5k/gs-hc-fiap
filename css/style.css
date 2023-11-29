@@ -94,3 +94,77 @@ span.line {
     margin: 36px 0;
 }
 
+
+section.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+section.form-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.form-section form section.form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section.form-section form input.input-form {
+    width: 40%;
+    margin: 40px 2%;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid var(--border-input);
+    padding-left: 25px;
+    outline: none;
+}
+
+
+section.form-section form section.question-group {
+    display: flex;
+}
+
+section.form-section button {
+    width: 20%;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--red);
+    color: white;
+}
+
+.question-group label {
+    margin: 0 10px;
+}
+footer {
+    display: flex;
+    background-color: rgba(255,255,255, 0.6);
+    justify-content: space-around;
+}
+
+footer section.footer-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+footer section.footer-section ul {
+    list-style: none;
+}
+footer section.footer-section ul li a{
+    text-decoration: none;
+    color: var(--red);
+    transition: 150ms ease-in-out;
+    opacity: 0.8;
+}
+
+footer section.footer-section ul li a:hover {
+    opacity: 1;
+}
