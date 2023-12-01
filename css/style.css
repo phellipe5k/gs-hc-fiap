@@ -20,6 +20,7 @@ header {
     display: flex;
     background-color: var(--logo-color);
     justify-content: center;
+    width: 100vw;
 }
 
 header nav {
