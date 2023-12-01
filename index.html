@@ -7,21 +7,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <title>FIAP - Global Solution</title>
+    <title>Vita Screen - Global Solution</title>
 </head>
 <body>
     <header>
         <nav>
             <ul class="nav-list list-1">
-                <li><a href="#">Projeto</a></li>
-                <li><a href="#">Pitch</a></li>
-                <li><a href="#">Ipsum</a></li>
+                <li><a href="#projeto">Projeto</a></li>
+                <li><a href="#proposta">Proposta</a></li>
+                <li><a href="#pitch">Pitch</a></li>
             </ul>
-            <img src="images/logo.png" alt="Logo" />
+            <img src="images/logo.jpeg" width="130" alt="Logo" />
             <ul class="nav-list list-2">
-                <li><a href="#">Loren</a></li>
-                <li><a href="#">Ipsum</a></li>
-                <li><a href="#">Formulário</a></li>
+                <li><a href="#dispositivo">Dispositivo</a></li>
+                <li><a href="#grafico">Predição</a></li>
+                <li><a href="#form">Formulário</a></li>
             </ul>
 
         </nav>
@@ -29,7 +29,7 @@
 
     <section class="topic project-section">
         <article>
-            <h3 class="subtitle">Projeto</h3>
+            <h3 class="subtitle" id="projeto">Projeto Vita Screen</h3>
             <p>O projeto propõe o desenvolvimento e distribuição de um dispositivo de teste de DSTs, direcionado a diversos segmentos de clientes,
                 incluindo o público geral preocupado com sua saúde sexual, profissionais de saúde em clínicas e centros de saúde, e organizações governamentais
                 focadas em saúde pública. 
@@ -44,7 +44,7 @@
             <img src="images/pitch.png" />
         </div>
         <article>
-            <h3 class="subtitle">Proposta de valor</h3>
+            <h3 class="subtitle" id="proposta">Proposta de valor</h3>
             <p>A proposta destaca a rapidez e precisão dos testes, acessibilidade tanto para uso pessoal quanto profissional, e a garantia de
                 confidencialidade. Os canais de distribuição abrangem vendas online, parcerias com clínicas e campanhas de conscientização. As fontes de
                 receita incluem a venda do dispositivo, kits descartáveis e modelos de assinatura.
@@ -55,7 +55,7 @@
 
     <section class="topic project-section">
         <article>
-            <h3 class="subtitle">Pitch</h3>
+            <h3 class="subtitle" id="pitch">Pitch</h3>
             <p>Estamos revolucionando o acesso aos testes de DSTs com um dispositivo inovador que oferece rapidez, precisão e confidencialidade. Nosso
                 público-alvo abrange desde indivíduos preocupados com sua saúde sexual até profissionais de saúde e órgãos governamentais em busca de soluções
                 acessíveis para combater a propagação de DSTs. Com a venda do dispositivo, kits descartáveis e modelos de assinatura, oferecemos uma proposta de
@@ -67,53 +67,47 @@
     <span class="line"></span>
 
     <section class="topic project-section">
-        <div class="graphic-wrapper">
-            <img src="images/graphic1.png" />
-        </div>
+        <img src="images/device.png" alt="exemplo de dispositivo" />
         <article>
-            <h3 class="subtitle">Gráfico 1</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+            <h3 class="subtitle" id="dispositivo">Detalhes do dispositivo</h3>
+            <p>O Arduino permite a integração de sensores adicionais que monitoram variáveis como temperatura corporal, pH e níveis hormonais, proporcionando
+                insights mais abrangentes sobre a saúde sexual do usuário. Os dados coletados são sincronizados automaticamente com o aplicativo, fornecendo uma
+                visão holística e personalizada da saúde sexual.
             </p>
         </article>
     </section>
     <span class="line"></span>
 
-    <section class="topic project-section">
+    <section class="topic graphic-section">
         <article>
-            <h3 class="subtitle">Gráfico 2</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+            <h3 class="subtitle" id="grafico">Gráfico de predição</h3>
+            <p>Esses dados representam diferentes aspectos do desempenho do HealthGuard Probe ao longo de seis meses.
             </p>
         </article>
-        <div class="graphic-wrapper">
-            <img src="images/graphic2.png" />
-        </div>
+        <img src="images/graphic.png" />
     </section>
     <span class="line"></span>
 
     <section class="form-section">
         <form>
-            <h3 class="subtitle">Form</h3>
+            <h3 class="subtitle" id="form">Formulário</h3>
             <section class="form-wrapper">
-                <input class="input-form" type="text" placeholder="Nome*" />
-                <input class="input-form" type="text" placeholder="Endereço*" />
-                <input class="input-form" type="text" placeholder="Email" />
-                <input class="input-form" type="number" placeholder="Idade" />
+                <input id="name" class="input-form" type="text" placeholder="Nome*" />
+                <input id="address" class="input-form" type="text" placeholder="Endereço*" />
+                <input id="email" class="input-form" type="text" placeholder="Email*" />
+                <input id="age" class="input-form" type="number" placeholder="Idade*" />
                 
                     <label>
-                        <p>Pergunta</p>
+                        <p>Deseja receber novidades sobre o projeto?</p>
                         <div class="question-group">
                          
-                         <label for="resp1"><input type="radio" id="resp1" name="question" value="resp1"> Resposta 1</label>
+                         <label for="yes"><input type="radio" id="yes" name="question" value="yes"> Sim</label>
                          
-                         <label for="resp2"><input type="radio" id="resp2" name="question" value="resp2"> Resposta 2</label>
+                         <label for="no"><input type="radio" id="no" name="question" value="no"> Não</label>
                     
                         </div>
                     </label>
-                <button type="submit">Enviar</button>
+                <button type="button" onclick="send()">Enviar</button>
             </section>
         </form>
     </section>
@@ -121,27 +115,25 @@
         <section class="footer-section util-links">
             <h4>Links Úteis</h4>
             <ul>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
+                <li><a href="https://www.hc.fm.usp.br/hc/portal/" target="_blank">Hospital das Clínicas</a></li>
+                <li><a href="https://www.fiap.com.br/" target="_blank">Fiap</a></li>
             </ul>
         </section>
 
         <section class="footer-section info">
             <h4>Informações</h4>
             <ul>
-                <li><a href="#">Lorem Ipsum is simply dummy</a></li>
-                <li><a href="#">Lorem Ipsum is simply dummy</a></li>
-                <li><a href="#">Lorem Ipsum is simply dummy</a></li>
+                <li><a href="#">Vídeo Pitch / apresentação do Vita Screen</a></li>
             </ul>
         </section>
 
         <section class="footer-section address">
             <h4>Endereço</h4>
             <ul>
-                <li><a href="#">Lorem Ipsum is simply dummy</a></li>
+                <li><a href="https://maps.app.goo.gl/poqDoarxcHhoZ6WZA" target="_blank">Fiap: Av. Paulista, 1106 - 7º andar - Bela Vista, São Paulo - SP, 01311-000</a></li>
             </ul>
         </section>
     </footer>
 </body>
+<script type="text/javascript" src="script.js"></script>
 </html>
